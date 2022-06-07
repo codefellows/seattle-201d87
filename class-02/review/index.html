@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Class 01 Lab: Joshua Frazer</title>
+  <style>
+    h1 {
+      color: darkblue;
+      background-color: antiquewhite;
+    }
+
+    body {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+
+    body * {
+      padding: 2%;
+    }
+
+    p {
+      border: 1% black dotted;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>Class 01 Lab</h1>
+    <p style="color:darkslategray; background-color: azure;">What is your name?</p>
+    <p style="color: darkred; background-color: beige;">What's your favorite hobby?</p>
+    <p style="color:darkslateblue; background-color: blanchedalmond;">What place do you most want to visit?</p>
+    <p style="color: darkgreen; background-color: burlywood;">What's your favorite season of the year?</p>
+    <script>
+      let userName = prompt("What is your name?");
+      console.log(`The user\'s name is ${userName}.`);
+      alert(`Your name is ${userName}.`);
+
+      let hobby = prompt("What's your favorite hobby?");
+      console.log(`${userName}\'s favorite hobby is ${hobby}.`);
+      alert(`Hello, ${userName}. I see that you like ${hobby}.`);
+
+      let destination = prompt("What place do you most want to visit?");
+      console.log(`${userName} wants to visit ${destination}.`);
+      alert(`${userName} should try to do ${hobby} in ${destination}.`)
+
+      let season = prompt("What's your favorite season of the year?");
+      console.log(`${userName}\'s favorite season is ${season}.`);
+      alert(`${userName} should try doing ${hobby} in ${destination} during the ${season} months.`);
+    </script>
+  </main>
+  <footer></footer>
+</body>
+
+</html>
