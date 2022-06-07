@@ -66,3 +66,5 @@ Arrays are data structure that group values together in one spot.
 * Index represents the distance from the beginning of the structure.
 
 ## Lab Prep / Git and Github
+
+Lab Project Example: https://github.com/JacobKnaack/class-02-lab
