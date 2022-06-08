@@ -1,0 +1,19 @@
+h1 {
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid red;
+  border-radius: 50px;
+  padding: 10px;
+  /* width: 100px; */
+  width: 50%;
+}
+
+main {
+  width: 50%;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border: 2px solid blue; 
+}
