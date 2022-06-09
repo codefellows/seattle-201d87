@@ -1,0 +1,23 @@
+div {
+  background-color: red;
+  height: 1000px;
+}
+
+.relative {
+  position: relative;
+  top: 50px;
+  left: 30px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.fixed {
+  position: fixed;
+  top:0;
+  right: 0;
+}
+
