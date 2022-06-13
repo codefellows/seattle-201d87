@@ -63,3 +63,22 @@ function render() {
   // adding a new element to our existing section.
   resultEl.appendChild(headingEl);
 }
+
+
+// Random number generation
+
+// console.log(Math.floor(Math.random() * 10) + 1);
+
+Math.random(); // some number between 0 and 1.
+
+function generateRandom(num) {
+  return Math.floor(Math.random() * num) + 1;
+}
+
+// console.log(generateRandom(1000));
+
+function generateNumberBetween(min, max) {
+  return Math.round(Math.random() * (max - min)) + min;
+}
+
+console.log(generateNumberBetween(5,10));
