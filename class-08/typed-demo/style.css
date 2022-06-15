@@ -1,0 +1,60 @@
+header {
+  height: 75px;
+  border: thin solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p, div {
+  /* display: inline-block; */
+  /* position: absolute; */
+}
+
+#text {
+  width: 75%;
+  height: 200px;
+  /* border: thin solid blue; */
+  margin: 40px auto 40px auto;
+  overflow-y: scroll;
+}
+
+a {
+  width: 50px;
+  height: 30px;
+  background-color: grey;
+  display: inline-block;
+  margin: 15px 20px 15px 20px;
+}
+
+main {
+  height: calc(100vh - 150px);
+}
+
+.half {
+  /* position: relative; */
+  /* We need to set a baseline for inline-block elements with children in order for them to sit next to each other */
+  vertical-align: top; 
+  width: calc(50% - 4px);
+  height: 100%;
+  display: inline-block;
+  border: thin solid red;
+}
+
+img {
+  width: 100px;
+  margin: 0 10px 0 10px;
+}
+
+.img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: grey;
+}
