@@ -39,3 +39,6 @@ Relative: position the element relative to it's parent and siblings
 Absolute: ignore parents and siblings, position according the view window.
 
 ## JS Functions
+
+## Lab Prep: Pair Programming
+

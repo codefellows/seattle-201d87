@@ -88,6 +88,4 @@ pokedex; // [Jacob, Adrian]
 
 ## CSS From a Wireframe
 
-
-
 ## Lab Prep - lab 08a??

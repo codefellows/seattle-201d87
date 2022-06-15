@@ -68,3 +68,4 @@ Global object => `document`, let's you reference all properties and methods asso
   * `document.write()`
 
 ## Lab Prep: Domain Modeling
+
