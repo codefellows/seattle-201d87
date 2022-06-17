@@ -60,8 +60,7 @@ let makeHeaderRow = function(){
     let thEl = document.createElement('th');
     thEl.textContent = hoursLocal[i];
     trEl.appendChild(thEl);
-  };
-  debugger;
+  }
   CookieStand.standsTable.appendChild(trEl);
 };
 
