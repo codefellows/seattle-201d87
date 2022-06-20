@@ -24,22 +24,33 @@ Event Handling
 
 Trevor:  nested for loops, general confusion on how it works.  How does a nested for loop
 Tom: When to use constructor functions?
+
 Github branching: How to avoid "Gituations"?
- * Merge Conflicts (2 people have written in the same file, and their changes need to be brought together).
- * Errors on Pull / Push.
-  * Merge conflict on pull.
+
+- Merge Conflicts (2 people have written in the same file, and their changes need to be brought together).
+- Errors on Pull / Push.
+  - Merge conflict on pull.
+
 Matthew: File Paths on Github (linked js and CSS?).
- * <link rel='stylesheet' href='./style.css'>
-  * github pages likes to publish projects from a sub-domain
-  * `username.github.io/salmon-cookies`
+
+- `<link rel='stylesheet' href='./style.css'>`
+  - github pages likes to publish projects from a sub-domain
+  - `username.github.io/salmon-cookies`
+
 Mandela: What is the DOM used for?
-  * DOM is used for performing updates to the HTML document.
-    * CREATE / READ / UPDATE / DELETE elements in the Browser.
+
+- DOM is used for performing updates to the HTML document.
+  - CREATE / READ / UPDATE / DELETE elements in the Browser.
+
 Lucy: How to create a variable, modify in one function, and use in a second function?
+
 Events:  AddEventListener, how to add inputs.
+
 Isaiah: When do you use classes / ids / query Selectors.
-  * Classes in CSS should be used when you want to reuse CSS Blocks for multiple elements / components.
-  * ID: should be used for DOM selection, and finding 1 specific area of your HTML.
+
+- Classes in CSS should be used when you want to reuse CSS Blocks for multiple elements / components.
+- ID: should be used for DOM selection, and finding 1 specific area of your HTML.
+
 Hayden: General CSS usage, when to use pseudo selectors vs making a class or ID.
 
 ```javascript
