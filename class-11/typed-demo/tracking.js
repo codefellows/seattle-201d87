@@ -1,7 +1,7 @@
 'use strict';
 
 // searches the HTML document for all img tags that are present.
-let imageEls = document.querySelectorAll('img');
+let imageEls = document.querySelectorAll('img'); // [<img>]
 console.log(imageEls);
 
 let clicks = 0;
@@ -45,34 +45,61 @@ for (let i = 0; i < fileNames.length; i++) {
   images.push(new Image(fileNames[i]));
 }
 
-// after the break, we will refactor to use a loop
+// rendering the image data and assigning id attribute in images onto the imageEls
 imageEls[0].id = images[0].id;
 imageEls[0].src = images[0].src;
+images[0].views++;
 imageEls[1].id = images[1].id;
 imageEls[1].src = images[1].src;
+images[1].views++;
+// img.src = './assets/images/cruisin-goat.jpg';
 
-// method, that exists on every array.
+function handleClick(event) {
+  // check which image was clicked on.
+  // event.target.src == some image in images, increment the clicks
+  for (let i = 0; i < images.length; i++) { // array search
 
-
-imageEls.forEach(function (img) {
-  // img.src = './assets/images/cruisin-goat.jpg';
-
-  img.addEventListener('click', function (event){
-    // check which image was clicked on.
-    // event.target.src == some image in images, increment the clicks
-    for (let i = 0; i < images.length; i++) {
-
-      console.log(event.target.id, images[i].id);
-      if (event.target.id === images[i].id) {
-        images[i].clicks++;
-      }
+    console.log(event.target.id, images[i].id);
+    if (event.target.id === images[i].id) {
+      images[i].clicks++;
     }
-    console.log(images);
-  });
+  }
+  renderImages();
+  console.log(images);
+}
+
+// forEach method, that exists on every array.
+// adds an event listener to every img tag in imageEls
+imageEls.forEach(function (img) {
+  img.addEventListener('click', handleClick);
 }); //  provide a callback
 
 
 // generating random non duplicate images to render.
 //  new image each time one is clicked, and those images should not be the same.
+function renderImages() {
+
+  // generate 2 new images and if they are different render them.
+  let image1 = generateRandomImage();
+  let image2 = generateRandomImage();
+
+  while (image1.id === image2.id) {
+    image1 = generateRandomImage();
+  }
+
+  // render to the our imageEls
+  imageEls[0].id = image1.id;
+  imageEls[0].src = image1.src;
+  imageEls[1].id = image2.id;
+  imageEls[1].src = image2.src;
+  image1.views++;
+  image2.views++;
+}
+
+// return a random Image from images
+function generateRandomImage() {
+  let index = Math.floor(Math.random() * images.length);
+  return images[index];
+}
 
 console.log(images);
