@@ -1,1 +1,1 @@
-# Assets for BUSMALL Lab
+# Assets for Odd Duck Products Lab
