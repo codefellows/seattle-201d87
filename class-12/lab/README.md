@@ -1,10 +1,10 @@
-# Lab 12: BusMall
+# Lab 12: Odd Duck Products
 
 Read the document in its entirety before beginning your lab. To view this lab assignment in its own tab, click [HERE](https://codefellows.github.io/code-201-guide/curriculum/class-12/lab/){:target="_blank"}
 
 ## Problem Domain
 
-The full BusMall problem domain can be found [HERE](https://codefellows.github.io/code-201-guide/curriculum/class-11/lab/){:target="_blank"}
+The full Odd Duck Products problem domain can be found [HERE](https://codefellows.github.io/code-201-guide/curriculum/class-11/lab/){:target="_blank"}
 
 ## Instructions
 
@@ -26,7 +26,7 @@ Below are your lab requirements in a user story format. Try and think up what th
 
 ## Developer Style Guide
 
-- Do today's work on a branch called `chartjs`.
+- Do today's work on a branch called `dataviz`.
 
 This is an individual assignment today, but you are free to collaborate with classmates if you want. Just be sure that if you do, be sure to make note of that collaboration in your README file.
 
