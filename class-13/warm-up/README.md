@@ -1,6 +1,6 @@
 # Render List
 
-This folder includes and HTML and JavaScript file, use them to accomplish the following:
+This folder includes an HTML and JavaScript file, use them to accomplish the following:
 
 * Render all of values in the `values` array in an unordered HTML list.
 
