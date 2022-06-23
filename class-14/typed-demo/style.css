@@ -1,0 +1,89 @@
+@keyframes wiggle {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 500px;
+    height: 100px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+
+@keyframes both {
+  0% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    margin-left: 500px;
+    height: 100px;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+#animate-me {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  border: thin solid red;
+  /* animation: wiggle; */
+  /* animation-duration: 1s; */
+  transition: 500ms;
+}
+
+.moveRight {
+  height: 100px;
+  margin-left: 100px;
+  transition: 1s;
+}
+
+#animate-me:active {
+  /* margin-left: 500px; */
+  transition: 1s; 
+  animation: wiggle 1s infinite, blink 2s;
+  /* opacity: 0; */
+  /* animation: wiggle; */
+  /* animation-duration: 1s; */
+}
